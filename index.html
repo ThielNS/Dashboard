@@ -8,13 +8,12 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header class="navbar-side _justify-flex-start">
-        <h1 id="logo">ISOMORPHIC</h1>
-    </header>
-
+<body class="row">
     <div class="sidemenu flex-3">
-        <ul>
+        <header>
+            <h1>ISOMORPHIC</h1>
+        </header>
+        <ul class="accordion">
             <li>
                 <a href="#">
                     <div>
@@ -28,10 +27,8 @@
                     <div>
                         <i class="icon"></i>
                         <span>Ecommerce</span>
-                    </div>
-                    <a href="#">
                         <i class="icon -icon-arrow"></i>
-                    </a>
+                    </div>
                 </a>
             </li>
             <li>
@@ -39,10 +36,8 @@
                     <div>
                         <i class="icon"></i>
                         <span>Form</span>
-                    </div>
-                    <a href="#">
                         <i class="icon -icon-arrow -flipped"></i>
-                    </a>
+                    </div>
                 </a>
                 <ul class="sub-menu">
                     <li><a href="input.html"><span>Input</span></a></li>
@@ -54,76 +49,88 @@
     </div>
     <div class="flex-9">
         <header>
-            <div class="hamburger-menu"><i class="icon icon-hamburger"></i></div>
-            <div class="top-menu">
-                <div class="search-form">
+            <div class="hamburger-menu">
+                <button>
+                     <i class="icon icon-hamburger"></i>                        
+                </button>
+            </div>
+            <div class="menu-right">
+                <form action="#" method="post" class="search-form">
                     <input type="search">
                     <i class="icon"></i>
-                </div>
-                <nav class="alerts-nav">
-                    <ul>
+                </form>
+                <nav class="alerts">
+                    <ul class="row">
                         <li><a href="Mail"><i class="icon -icon-mail"></i><span class="orange">4</span></a></li>
                         <li><a href="bell"><i class="icon -icon-bell"></i><span class="blue">4</span></a></li>
                         <li><a href="chat"><i class="icon -icon-chat"></i><span class="purple">4</span></a></li>
                         <li><a href="cart"><i class="icon -icon-cart"></i><span class="pink">4</span></a></li>
                     </ul>
                 </nav>
-                <div class="profile-status">
-                    <img src="" alt="profile-image">
-                    <span></span>
+                <div class="profile">
+                    <img src="" alt="profile-image" class="circle">
+                    <span class="circle status -online "></span>
                 </div>
             </div>
         </header>
-        <main class="card">
-            <header>
-                <h3>Input Group</h3>
-                <p>Input.Group example Note: You dont need Col to control the width in the compact mode.</p>
-            </header>
-            <form action="#" method="post">
-                <div>
-                    <input type="text" value="0571">
-                    <input type="text" value="2688888">                    
+        <main>
+            <section class="card">
+                <header>
+                    <h3>Input Group</h3>
+                    <p>Input.Group example Note: You dont need Col to control the width in the compact mode.</p>
+                </header>
+                <div class="content">
+                    <form action="#" method="post">
+                        <div class="row flex-12">
+                            <input type="text" value="0571">
+                            <input type="text" value="2688888">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" value="0571">
+                            <input type="text" value="2688888">
+                        </div>
+                        <div class="input-group">
+                            <select><option value="Option 1">Option 1</option></select>
+                            <input type="text" value="input content">
+                            <input type="text" class="flex-1">
+                        </div>
+                        <div class="input-group">
+                            <select><option>Option1</option></select>
+                            <input type="text" value="input content">
+                            <input type="text">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" value="input content">
+                            <div class="input-icon">
+                                <input type="date">
+                                <i class="icon"></i>
+                            </div>
+
+                        </div>
+                        <div class="input-group">
+                            <select class="flex-1">
+                            <option value="Option-1">Option-1</option>
+                        </select>
+                            <select class="flex-1">
+                            <option value="Option-2">Option-2</option>
+                        </select>
+                        </div>
+                        <div class="input-group">
+                            <select>
+                            <option value="Between" >Between</option>
+                        </select>
+                            <input type="text" placeholder="Minimum" class="flex-2">
+                            <input type="text" placeholder="Maximum">
+                        </div>
+                        <div class="input-group">
+                            <select>
+                            <option value="Sign Up">Sign Up</option>
+                        </select>
+                            <input type="text" placeholder="Email">
+                        </div>
+                    </form>
                 </div>
-                <div class="input-group">
-                    <input type="text" value="0571">
-                    <input type="text" value="2688888">                    
-                </div>                 
-                <div class="input-group">
-                    <select><option value="Option 1">Option 1</option></select>
-                    <input type="text" value="input content">
-                    <input type="text" class="flex-1">
-                </div>
-                <div class="input-group">
-                    <select><option>Option1</option></select>
-                    <input type="text" value="input content">
-                    <input type="text">
-                </div>
-                <div class="input-group">
-                    <input type="text" value="input content">
-                    <input type="date">
-                </div>
-                <div class="input-group">                                                                                          
-                    <select>
-                        <option value="Option-1" class="flex-1">Option-1</option>
-                    </select>
-                    <select>
-                        <option value="Option-2" class="flex-1">Option-2</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <select>
-                        <option value="Between" >Between</option>
-                    </select>
-                    <input type="text" placeholder="Minimum" class="flex-2">
-                    <input type="text" placeholder="Maximum">
-                </div>
-                <div class="input-group">
-                    <select>
-                        <option value="Sign Up">Sign Up</option>
-                    </select>
-                    <input type="text" placeholder="Email">
-                </div>
-            </form>
+            </section>
         </main>
     </div>
 

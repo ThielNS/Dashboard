@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
+
 <body>
-    <header class="navbar-side _justify-flex-start">   
+    <header class="navbar-side _justify-flex-start">
         <h1 id="logo">ISOMORPHIC</h1>
     </header>
-    
+
     <div class="sidemenu flex-3">
         <ul>
             <li>
@@ -44,6 +46,8 @@
                 </a>
                 <ul class="sub-menu">
                     <li><a href="input.html"><span>Input</span></a></li>
+                    <li><a href="input.html"><span>Editor</span></a></li>
+                    <li><a href="input.html"><span>Forms with validation</span></a></li>
                 </ul>
             </li>
         </ul>
@@ -53,76 +57,76 @@
             <div class="hamburger-menu"><i class="icon icon-hamburger"></i></div>
             <div class="top-menu">
                 <div class="search-form">
-
+                    <input type="search">
+                    <i class="icon"></i>
                 </div>
                 <nav class="alerts-nav">
                     <ul>
-                        <li><a href="Mail"><i class="icon -icon-mail"></i></a></li>
-                        <li><a href="bell"><i class="icon -icon-bell"></i></a></li>
-                        <li><a href="chat"><i class="icon -icon-chat"></i></a></li>
-                        <li><a href="cart"><i class="icon -icon-cart"></i></a></li>
+                        <li><a href="Mail"><i class="icon -icon-mail"></i><span></span></a></li>
+                        <li><a href="bell"><i class="icon -icon-bell"></i><span></span></a></li>
+                        <li><a href="chat"><i class="icon -icon-chat"></i><span></span></a></li>
+                        <li><a href="cart"><i class="icon -icon-cart"></i><span></span></a></li>
                     </ul>
                 </nav>
                 <div class="profile-status">
                     <img src="" alt="profile-image">
+                    <span></span>
                 </div>
             </div>
         </header>
-        <main>
+        <main class="card">
             <header>
                 <h3>Input Group</h3>
                 <p>Input.Group example Note: You dont need Col to control the width in the compact mode.</p>
             </header>
             <form action="#" method="post">
-                <fieldset>
+                <div>
                     <input type="text" value="0571">
-                    <input type="text" value="26888888">
-                </fieldset>
-                <fieldset>
+                    <input type="text" value="2688888">                    
+                </div>
+                <div class="input-group">
                     <input type="text" value="0571">
-                    <input type="text" value="26888888">
-                </fieldset>
-                <fieldset>
-                    <select>
-                        <option value="Zhejiang">Zhejiang</option>
-                    </select>
-                    <input type="text" value="dshgfdjh">
-                </fieldset>
-                <fieldset>
-                    <select>
-                        <option value="Option 1">Option 1</option>
-                    </select>
-                        <input type="text" value="input content">
-                        <input type="text">
-                </fieldset>
-                <fieldset>
+                    <input type="text" value="2688888">                    
+                </div>                 
+                <div class="input-group">
+                    <select><option value="Option 1">Option 1</option></select>
+                    <input type="text" value="input content">
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <select><option>Option1</option></select>
+                    <input type="text" value="input content">
+                    <input type="text">
+                </div>
+                <div class="input-group">
                     <input type="text" value="input content">
                     <input type="date">
-                </fieldset>
-                <fieldset>
+                </div>
+                <div class="input-group">                                                                                          
                     <select>
-                        <option value="Option-1">Option-1</option>
+                        <option value="Option-1" class="flex-1">Option-1</option>
                     </select>
                     <select>
-                        <option value="Option-2">Option-2</option>
-                    </select>                        
-                 </fieldset>
-                 <fieldset>
+                        <option value="Option-2" class="flex-1">Option-2</option>
+                    </select>
+                </div>
+                <div class="input-group">
                     <select>
                         <option value="Between">Between</option>
                     </select>
-                        <input type="text" placeholder="Minimum">
-                        <input type="text" placeholder="Maximum">
-                </fieldset>
-                <fieldset>
+                    <input type="text" placeholder="Minimum">
+                    <input type="text" placeholder="Maximum">
+                </div>
+                <div class="input-group">
                     <select>
                         <option value="Sign Up">Sign Up</option>
                     </select>
-                        <input type="text" placeholder="Email">
-                </fieldset>
+                    <input type="text" placeholder="Email">
+                </div>
             </form>
         </main>
     </div>
 
 </body>
+
 </html>

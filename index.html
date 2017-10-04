@@ -1,123 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
 </head>
 <body>
-    <div>
-        <header>
-            <h1>ISOMORPHIC</h1>
-            <div>
-                <ul>
-                    <li>
-                        <a href="#">
-                        <div>
-                             <i class="icon"></i>
-                            <span>Email</span>                             
-                        </div>  
-                        </a>                   
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#">
-                                <i class="icon"></i>
-                                <span>Ecommerce</span>
-                            </a>
-                            <a href="#">
-                                <i class="icon"></i>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#">
-                                <i class="icon"></i>
-                                <span>Maps</span>
-                            </a>
-                            <a href="#">
-                                <i class="icon"></i>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#">
-                                <i class="icon"></i>
-                                <span>Maps</span>
-                            </a>
-                            <a href="# ">
-                                <i class="icon"></i>
-                             </a>                 
-                         </div>
-                    <li>
-                        <div>
-                            <a href="#">
-                                <i class="icon"></i>
-                                <span>Notes</span>
-                            </a>
-                            <a href="#">
-                                <i class="icon"></i>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="icon"></i>                                
-                            <span>Todos</span>
-                        </a>
-                        <a href="#">
-                            <i class="icon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#">
-                             <i class="icon"></i>
-                             <span>Contacts</span>
-                            </a>
-                            <a href="#">
-                             <i class="icon"></i>
-                             </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#">
-                                <i class="icon"></i>
-                                <span>Shuffle</span>
-                            </a>
-                            <a href="#">
-                                <i class="icon"></i>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="">
-                                <i class="icon"></i>
-                                <span>Charts</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#">
-                                <i class="icon"></i>
-                                <span>Forms</span>
-                            </a>
-                        </div>
-                        <ul>
-                            <li>Input</li>
-                            <li>Editor</li>
-                            <li>Forms With Validation</li>
-                        </ul>
-                    </li>
+    <header class="navbar-side _justify-flex-start">   
+        <h1 id="logo">ISOMORPHIC</h1>
+    </header>
+    
+    <div class="sidemenu flex-3">
+        <ul>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="icon"></i>
+                        <span>Email</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="icon"></i>
+                        <span>Ecommerce</span>
+                    </div>
+                    <a href="#">
+                        <i class="icon -icon-arrow"></i>
+                    </a>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="icon"></i>
+                        <span>Form</span>
+                    </div>
+                    <a href="#">
+                        <i class="icon -icon-arrow -flipped"></i>
+                    </a>
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="input.html"><span>Input</span></a></li>
                 </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="flex-9">
+        <header>
+            <div class="hamburger-menu"><i class="icon icon-hamburger"></i></div>
+            <div class="top-menu">
+                <div class="search-form">
+
+                </div>
+                <nav class="alerts-nav">
+                    <ul>
+                        <li><a href="Mail"><i class="icon -icon-mail"></i></a></li>
+                        <li><a href="bell"><i class="icon -icon-bell"></i></a></li>
+                        <li><a href="chat"><i class="icon -icon-chat"></i></a></li>
+                        <li><a href="cart"><i class="icon -icon-cart"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="profile-status">
+                    <img src="" alt="profile-image">
+                </div>
             </div>
         </header>
+        <main>
+            <header>
+                <h3>Input Group</h3>
+                <p>Input.Group example Note: You dont need Col to control the width in the compact mode.</p>
+            </header>
+            <form action="#" method="post">
+                <fieldset>
+                    <input type="text" value="0571">
+                    <input type="text" value="26888888">
+                </fieldset>
+                <fieldset>
+                    <input type="text" value="0571">
+                    <input type="text" value="26888888">
+                </fieldset>
+                <fieldset>
+                    <select>
+                        <option value="Zhejiang">Zhejiang</option>
+                    </select>
+                    <input type="text" value="dshgfdjh">
+                </fieldset>
+                <fieldset>
+                    <select>
+                        <option value="Option 1">Option 1</option>
+                    </select>
+                        <input type="text" value="input content">
+                        <input type="text">
+                </fieldset>
+                <fieldset>
+                    <input type="text" value="input content">
+                    <input type="date">
+                </fieldset>
+                <fieldset>
+                    <select>
+                        <option value="Option-1">Option-1</option>
+                    </select>
+                    <select>
+                        <option value="Option-2">Option-2</option>
+                    </select>                        
+                 </fieldset>
+                 <fieldset>
+                    <select>
+                        <option value="Between">Between</option>
+                    </select>
+                        <input type="text" placeholder="Minimum">
+                        <input type="text" placeholder="Maximum">
+                </fieldset>
+                <fieldset>
+                    <select>
+                        <option value="Sign Up">Sign Up</option>
+                    </select>
+                        <input type="text" placeholder="Email">
+                </fieldset>
+            </form>
+        </main>
     </div>
+
 </body>
 </html>
